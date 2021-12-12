@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7775c06804.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <div id="wrapper">
+        <div id="buttons-left">
+            <div id="color-wrapper">
+                <span class="lalel">Color</span>
+                <label for="colorpicker"></label>
+                <input type="color" id="colorpicker" value="#0B0C10">
+            </div>
+            <button id="defualt-mode" class="button">Black & White</button>
+            <button id="rainbow" class="button">Rainbow</button>
+            <button id="eraser" class="button">Eraser</button>
+            <button id="clear" class="button">Clear</button>
+        </div>
+        <div id="container">
+        </div>
+        <div id="buttons-right">
+            <button id="grid-size" class="button">Grid Size:</button>
+            <button class="size" id="x16">16x16</button>
+            <button class="size" id="x32">32x32</button>
+            <button class="size" id="x48">48x48</button>
+            <button class="size" id="x64">64x64</button>
+            <button class="size" id="x80">80x80</button>
+            <button class="size" id="x96">96x96</button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2021 ivane-k<i class="fab fa-github"></i></p>
+    </footer>
+</body>
+</html>

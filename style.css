@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans&family=Poppins&display=swap');
+
+/* colors */
+:root {
+    --light-gray: #D3D3D3;
+    --main-dark: #0B0C10;
+    --light-red: #f44336;
+    --dark-red: #e21a0c;
+}
+
+/* general */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    color: var(--main-dark);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+#container {
+    flex: 2 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 512px;
+    max-height: 512px;
+    background-color: white;
+}
+
+.square {
+    flex-shrink: 0;
+    background-color: white;
+    border: none;
+}
+
+#wrapper {
+    display: flex;
+    gap: 100px;
+}
+
+/* buttons */
+#buttons-left, #buttons-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+button, #color-wrapper {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 24px;
+    letter-spacing: -.8px;
+    min-width: 140px;
+    border: 2px solid #000;
+    padding: 0 17px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: 0;
+    color: #000;
+    fill: #000;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:focus, #color-wrapper:focus {
+    color: #171e29;
+}
+  
+button:hover, #color-wrapper:hover {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+  
+button:active, #color-wrapper:active {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+#rainbow:hover {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+input[type="color"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#color-wrapper {
+    gap: 6px;
+    cursor: auto;
+}
+
+.label {
+    display: inline-block;
+}
+
+/* footer */
+footer {
+    padding: 30px 0;
+}
+
+footer i {
+    margin-left: 10px;
+}
+
